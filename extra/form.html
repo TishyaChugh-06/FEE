@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registeration Form</title>
+ <style>
+    h2 {
+      margin-top: 40px;
+      font-weight: bold;
+      color: black;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      background-color: rgb(194, 234, 221);
+      height: auto;
+      flex-direction: column;
+    }
+
+    form {
+      width: 400px;
+      padding: 20px 30px;
+      border: 6px single rgb(11, 11, 10);
+      border-radius: 8px;
+      background-color: rgb(242, 239, 239);
+    }
+
+    input,
+    select {
+      width: 100%;
+      margin: 8px 0 16px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  
+  <form action="submit">
+    <h3> Registeration Form</h3>
+    <label >Name</label>
+    <input type="text" id="name" name="name" required /><br>
+
+    <label >Age</label>
+    <input type="text" id="age" name="age" required /><br>
+     <label for="dob">Date Of Birth</label>
+    <input type="date" id="dob" name="dob" required /><br>
+
+    <label >Password</label>
+    <input type="password" id="password" name="Password" required /><br>
+
+    <label >Month of admission</label>
+    <input type="text" id="Month of Adm" name="Month Of Adm" required /> <br>
+
+    <label>Gender:</label><br>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male" required /><br>
+
+    <label >Female</label>
+    <input type="radio" id="female" name="gender" value="female" required />
+<br>
+    <label >Year of 10th pass</label>
+    <input type="number" id="other" name="gender" value="other" required /> <br>
+
+    <label >Category</label>
+    <select id="category" name="category" required>
+      <option value="" disabled selected> Select your category</option>
+      <option value="General">General</option>
+      <option value="OBC">OBC</option>
+      <option value="SC">SC</option>
+      <option value="ST">ST</option>
+    </select><br>
+
+ <label >Qualification</label>
+    <select id="degree" name="degree" required>
+       <option value="" disabled selected> Select your Qualification</option>
+      <option value="10th pass">10th pass</option>
+      <option value="12th pass">12th pass</option>
+      <option value="Graduate">Graduate</option>
+      <option value="Undergraduate">Undergraduate</option>
+      <option value="Master">Masters</option>
+    </select><br>
+
+    <label>Select Color</label>
+  
+     <input type="color" id="color" name="color" required /><br>
+    <br>
+
+    <label>Select range from 0 to 100</label>
+    <input type="range" id="range" min="0" max="100">
+<br>
+
+
+
+   
+
+    <button>Submit</button>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discovery Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+
+    .navbar {
+      position:absolute;
+      top: 0;
+      width: 100%;
+      padding: 25px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      z-index: 1000;
+    }
+
+    .navbar img.logo {
+      height: 45px;
+      color:white;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 40px;
+      font-size: 16px;
+      font-weight: bold;
+      position: relative;
+    }
+
+   
+    .nav-links a:hover,
+    .nav-links a.active {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+
+    .banner {
+      background-image: url("https://www.datocms-assets.com/128889/1714657126-bakers-bay-golf-and-ocean-club-copy.jpg?auto=format&fit=max&h=3000&w=2000");
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      padding-top: 120px; 
+    }
+
+    .banner h1 {
+      font-size: 60px;
+      font-style: italic;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .gallery img {
+      width: 33.33%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .gallery img {
+        width: 100%;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <img src="https://discoverylandco.com/logo-dark.svg" alt="Discovery Logo" class="logo">
+    <div class="nav-links">
+      <a href="#">About DLC</a>
+      <a href="#">Our Worlds</a>
+      <a href="#">Experiences</a>
+      <a href="#">Company</a>
+      <a href="#gallery" class="active">Gallery</a>
+    </div>
+  </div>
+
+ 
+  <div class="banner">
+    <h1>Gallery</h1>
+  </div>
+
+  <!-- Gallery Section -->
+  <div class="gallery" id="gallery">
+    <img src="https://www.datocms-assets.com/128889/1715090594-lake-view-skiing-in-lake-tahoe-copy.jpg?auto=format&fit=max&h=3000&w=2000" alt="Image 1">
+    <img src="https://www.datocms-assets.com/128889/1714143802-barefoot-golf-at-gozzer-4.jpg?auto=format&fit=max&h=3000&w=2000" alt="Image 2">
+    <img src="https://www.datocms-assets.com/128889/1715090484-wellness-gallery-1_11014826b3e36b3697374f276a89b517-2_210122_210812.jpg?auto=format&fit=max&h=3000&w=2000" alt="Image 3">
+  </div>
+
+  <div class="gallery" id="gallery">
+    <img src="https://www.datocms-assets.com/128889/1715090023-stocksy_txp3615512ad2e200_originaldelivery_1580323-1_210301_201432-copy.jpg?auto=format&fit=max&h=3000&w=2000" alt="Image 4">
+    <img src="https://www.datocms-assets.com/128889/1715090539-luxury-clubhouse-yellowstone-club.jpg?auto=format&fit=max&h=3000&w=2000" alt="Image 5">
+    <img src="https://www.datocms-assets.com/128889/1714657157-beach-front-dining-with-friends.jpg?auto=format&fit=max&h=3000&w=2000" alt="Image 6">
+  </div>
+
+  
+
+
+</body>
+</html>

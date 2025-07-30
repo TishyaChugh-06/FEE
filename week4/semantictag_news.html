@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEWS HTML PAGE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #2980b9;
+      color: white;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      background-color: #3498db;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 4px;
+    }
+
+    nav ul li a:hover {
+      background-color: #1d6fa5;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .content {
+      flex: 3;
+      min-width: 300px;
+    }
+
+    .news-article {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-article img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    aside {
+      flex: 1;
+      min-width: 250px;
+      background-color: #ecf0f1;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    aside h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .trending-topic {
+      margin-bottom: 20px;
+    }
+
+    .trending-topic a {
+      color: #2c3e50;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .trending-topic a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #2980b9;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .content, aside {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Daily News Portal</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Live News</a></li>
+      <li><a href="#">Technology</a></li>
+      <li><a href="#">Politics</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="content">
+      <h2 style="text-align: center;">LATEST NEWS</h2>
+
+      <article class="news-article">
+        <h3>Fighter Jet</h3>
+        <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/6051/live/a87eab90-5af0-11f0-9a88-e7f85ff11261.jpg.webp" alt="Fighter Jet">
+        <p>A British fighter jet stranded at an Indian airport for over five weeks is finally airborne. It landed in Kerala on June 14 due to weather issues and developed a technical fault. The jet is now en route to Darwin, Australia.</p>
+      </article>
+
+      <article class="news-article">
+        <h3>Arunachal Pradesh Dam Breakdown</h3>
+        <img src="https://images.indianexpress.com/2025/07/july-22-1.jpg?w=640" alt="Dam Breakdown">
+        <p>China’s hydropower project on the Yarlung Zangbo near Arunachal Pradesh raises concerns. This development affects India’s water security and marks a strategic shift in the region’s power dynamics.</p>
+      </article>
+    </section>
+
+    <aside>
+      <h2>Trending Topics</h2>
+
+      <div class="trending-topic">
+        <a href="#">Space Exploration</a>
+        <p>Major breakthroughs in Mars missions and satellite technology mark this decade's space race.</p>
+      </div>
+
+      <div class="trending-topic">
+        <a href="#">Climate Change</a>
+        <p>Rising sea levels, extreme weather, and global summits are shaping climate change conversations.</p>
+      </div>
+
+      <div class="trending-topic">
+        <a href="#">Tech Innovations</a>
+        <p>AI, Quantum Computing, and 6G are leading the next wave of technological revolutions.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Daily News. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

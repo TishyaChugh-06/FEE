@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 40px;
+    }
+
+    form {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 400px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Question 1: Email Input</h2>
+  <form>
+    <label for="email">Email:</label>
+    <input type="email"pattern="[A-Za-z-@]"id="email" name="email" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Question 2: Age Input (18-60)</h2>
+  <form>
+    <label for="age">Age (18-60):</label>
+    <input type="number" id="age" name="age" min="18" max="60" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Question 3: Password Field</h2>
+  <form>
+    <label for="password">Password (min 8 char):</label>
+    <input type="password" id="password" name="password" minlength="8" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Question 4: User Registration Form</h2>
+  <form>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" pattern="[A-Z-a-z-@]" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password2" minlength="8" required>
+
+    <label for="confirm">Confirm Password:</label>
+    <input type="password" id="confirm" name="confirm" required>
+
+    <label for="age">Age (18-99):</label>
+    <input type="number" id="age" name="age" min="18" max="99" required>
+
+    <label>
+      <input type="checkbox" id="terms" name="terms" required>
+      I accept the Terms and Conditions
+    </label>
+
+    <button type="submit">Register</button>
+  </form>
+
+</body>
+</html>
+
