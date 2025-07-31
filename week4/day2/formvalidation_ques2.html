@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Email  Form</title>
-  <style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
   body {
     font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
-    padding: 40px;
+    background-color: #f2f6fa;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    padding: 40px;
+  }
+
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
   }
 
   form {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 25px 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     width: 300px;
   }
 
@@ -27,10 +32,10 @@
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #333;
+    color: #444;
   }
 
-  input[type="email"] {
+  input[type="number"] {
     width: 100%;
     padding: 10px;
     font-size: 15px;
@@ -43,7 +48,7 @@
   button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #28a745;
     color: white;
     font-size: 16px;
     border: none;
@@ -52,18 +57,16 @@
   }
 
   button:hover {
-    background-color: #0056b3;
+    background-color: #218838;
   }
 </style>
 
-</head>
 <body>
-<h2>Question 1: Email Input</h2>
+    <h2>Question 2: Age Input (18-60)</h2>
   <form>
-    <label for="email">Email:</label>
-    <input type="email"pattern="[A-Za-z-@]"id="email" name="email" required>
+    <label for="age">Age (18-60):</label>
+    <input type="number" id="age" name="age" min="18" max="60" required>
     <button type="submit">Submit</button>
   </form>
-
 </body>
 </html>
